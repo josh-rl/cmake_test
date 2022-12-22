@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-# project(engine VERSION 0.1.0)
-project(engine)
+project(engine VERSION 0.1)
 
 # include(CTest)
 # enable_testing()
@@ -13,4 +12,3 @@ add_executable(engine main.cpp)
 # include(CPack)
 
 # cmake -S src/ -B cmake/
-# cmake -S . -B cmake/
