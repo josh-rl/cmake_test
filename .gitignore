@@ -1,10 +1,13 @@
-cmake
-cmake/*
-# build
-# build/*
-# CMakeFiles
-# CMakeFiles/*
-# cmake_install.cmake
-# CMakeCache.txt
-# Makefile
-# engine
+# cmake
+cmake/CMakeFiles
+cmake/CMakeFiles/*
+cmake/Testing
+cmake/Testing/*
+cmake/cmake_install.cmake
+cmake/CMakeCache.txt
+cmake/CPackConfig.cmake
+cmake/CPackSourceConfig.cmake
+cmake/CTestTestfile.cmake
+cmake/DartConfiguration.tcl
+cmake/Makefile
+cmake/engine
