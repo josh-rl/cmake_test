@@ -11,3 +11,6 @@
 # cmake/DartConfiguration.tcl
 # cmake/Makefile
 # cmake/engine
+
+# .vscode
+# .vscode/*
