@@ -12,10 +12,12 @@ project(engine VERSION 0.1)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-configure_file(engine_config.hpp.in engine_config.hpp)
+# configure_file(engine_config.hpp.in engine_config.hpp)
 
 add_executable(engine main.cpp)
 
-target_include_directories(engine PUBLIC "${PROJECT_BINARY_DIR}")
+install(TARGETS engine DESTINATION bin)
+
+# target_include_directories(engine PUBLIC "${PROJECT_BINARY_DIR}")
 
 # cmake -S src/ -B cmake/

@@ -1,5 +1,5 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/cmake",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.sourceDirectory": "${workspaceFolder}/src",
     "files.associations": {
         "iosfwd": "cpp",
