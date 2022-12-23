@@ -2,25 +2,16 @@ cmake_minimum_required(VERSION 3.20)
 
 project(engine VERSION 1.0)
 
-# include(CTest)
-# enable_testing()
-
-# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-# include(CPack)
-
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# configure_file(engine_config.hpp.in engine_config.hpp)
+add_subdirectory(${PROJECT_SOURCE_DIR}/lib)
 
 add_executable(engine main.cpp)
 
-target_link_directories(engine PRIVATE ${PROJECT_SOURCE_DIR}/../lib/build/)
-target_link_libraries(engine engine_lib)
+target_link_libraries(engine PUBLIC engine_lib)
+target_include_directories(engine PUBLIC "${PROJECT_BINARY_DIR}" "${PROJECT_SOURCE_DIR}/lib")
 
 # install(TARGETS engine DESTINATION bin)
-
-# target_include_directories(engine PUBLIC "${PROJECT_BINARY_DIR}")
 
 # cmake -S src/ -B cmake/
