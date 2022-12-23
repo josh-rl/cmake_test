@@ -16,6 +16,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(engine main.cpp)
 
+target_link_directories(engine PRIVATE ${PROJECT_SOURCE_DIR}/../lib/build/)
 target_link_libraries(engine engine_lib)
 
 # install(TARGETS engine DESTINATION bin)
