@@ -1,5 +1,5 @@
 #include <string>
-#include "math_func.hpp"
+#include "../lib/math_func.hpp"
 
 int main(int argc, char const *argv[])
 {

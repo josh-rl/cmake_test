@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(engine VERSION 0.1)
+project(engine VERSION 1.0)
 
 # include(CTest)
 # enable_testing()
@@ -16,7 +16,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(engine main.cpp)
 
-install(TARGETS engine DESTINATION bin)
+target_link_libraries(engine engine_lib)
+
+# install(TARGETS engine DESTINATION bin)
 
 # target_include_directories(engine PUBLIC "${PROJECT_BINARY_DIR}")
 
