@@ -11,8 +11,8 @@ public:
     ~math_func();
 
     int get();
-    double sqrt();
-    double sqrt(int itr);
+    double heron_sqrt();
+    double heron_sqrt(int itr);
 
     friend std::ostream& operator<<(std::ostream& os, const math_func& self);
 };
@@ -27,7 +27,7 @@ int math_func::get() {
     return this->num;
 }
 
-double math_func::sqrt() {
+double math_func::heron_sqrt() {
     double ans = this->num;
     for (int i = 0; i < 10; i++) {
         ans = 0.5 * (ans + (this->num / ans));
@@ -35,7 +35,7 @@ double math_func::sqrt() {
     return ans;
 }
 
-double math_func::sqrt(int itr) {
+double math_func::heron_sqrt(int itr) {
     double ans = this->num;
     for (int i = 0; i < itr; i++) {
         ans = 0.5 * (ans + (this->num / ans));
